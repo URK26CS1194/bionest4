@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioNest - Text Styles and Layouts</title>
+<style>
+  :root { --heading-font: Georgia, serif; --body-font: Arial, sans-serif; --green:#2e5a3c; --leaf:#7fb069; --kraft:#b98b55; }
+  body { font-family: var(--body-font); font-size: 16px; line-height: 1.6; color:#1d2b22; background:#f5f7f1; margin:0; padding:24px; }
+  .page { max-width: 780px; margin: 0 auto; }
+  h1 { font-family: var(--heading-font); font-size: 32px; color: var(--green); margin: 0; }
+  h2 { font-family: var(--heading-font); font-size: 22px; font-weight: bold; margin-top: 0; }
+  .subtitle { color:#4d5f52; border-bottom: 2px solid var(--leaf); padding-bottom: 10px; margin: 4px 0 20px; }
+  .layout { display: flex; gap: 20px; }
+  .card { background:#fff; border:1px solid #d8dfd2; border-radius:8px; padding:16px; }
+  .sidebar { flex: 1; }
+  .main { flex: 2; }
+  .sidebar p { font-style: italic; color:#4d5f52; }
+  .main p { text-indent: 20px; letter-spacing: 0.3px; word-spacing: 2px; }
+  .highlight { text-transform: uppercase; font-weight: bold; color: var(--kraft); letter-spacing: 1px; }
+  a { color: var(--green); text-decoration: underline; }
+  @media (max-width: 600px) { .layout { flex-direction: column; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>BioNest</h1>
+  <p class="subtitle">Biodegradable packaging solutions</p>
+
+  <div class="layout">
+    <aside class="card sidebar">
+      <h2>About Us</h2>
+      <p>We make packaging from plant fibre, cornstarch and agricultural waste so that it returns to the soil.</p>
+      <p><a href="#">Download our catalogue</a></p>
+    </aside>
+    <main class="card main">
+      <h2>Why BioNest?</h2>
+      <p class="highlight">Packaging that does not outlast its purpose</p>
+      <p>Conventional plastic packaging can stay in the environment for hundreds of years. BioNest mailers, trays and food boxes break down in a compost environment in a matter of months.</p>
+      <p>Every product is made from renewable materials, printed with plant-based inks, and designed to be strong enough for shipping and food contact.</p>
+    </main>
+  </div>
+</div>
+</body>
+</html>
